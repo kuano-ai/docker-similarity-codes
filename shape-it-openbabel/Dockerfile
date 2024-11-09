@@ -50,4 +50,5 @@ RUN git clone https://github.com/rdkit/shape-it.git &&\
   make install
 ENV PATH="/root/opt/bin/:$PATH"
 
+WORKDIR /share
 ENTRYPOINT ["shape-it"]
